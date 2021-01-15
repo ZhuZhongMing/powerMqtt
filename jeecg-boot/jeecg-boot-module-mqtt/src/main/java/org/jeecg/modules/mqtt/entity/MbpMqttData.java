@@ -73,9 +73,9 @@ public class MbpMqttData implements Serializable {
 	@Excel(name = "是否删除", width = 15)
     @ApiModelProperty(value = "是否删除")
     private Integer delFlag;
-	/**设备编号*/
+	/**设备ID*/
 	@Excel(name = "设备编号", width = 15)
-    @ApiModelProperty(value = "设备编号")
+    @ApiModelProperty(value = "设备ID")
     private String equipmentId;
 	/**网关配置*/
 	@Excel(name = "网关配置", width = 15)

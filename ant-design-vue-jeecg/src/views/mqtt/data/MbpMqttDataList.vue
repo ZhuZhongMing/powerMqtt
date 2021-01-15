@@ -177,12 +177,12 @@
             title:'是否删除',
             align:"center",
             dataIndex: 'delFlag'
-          },
+          },*/
           {
-            title:'设备编号',
+            title:'设备ID',
             align:"center",
             dataIndex: 'equipmentId'
-          },*/
+          },
           {
             title:'网关配置',
             align:"center",
