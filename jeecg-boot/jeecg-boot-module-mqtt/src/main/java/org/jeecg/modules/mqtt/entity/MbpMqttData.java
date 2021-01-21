@@ -48,9 +48,9 @@ public class MbpMqttData implements Serializable {
     @ApiModelProperty(value = "是否警告")
     private Integer isWarn;
 	/**采集时间*/
-	@Excel(name = "采集时间", width = 15, format = "yyyy-MM-dd")
-	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
-    @DateTimeFormat(pattern="yyyy-MM-dd")
+	@Excel(name = "采集时间", width = 15, format = "yyyy-MM-dd HH:mm:ss")
+	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty(value = "采集时间")
     private Date readTime;
 	/**创建人*/

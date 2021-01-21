@@ -143,10 +143,11 @@
             title:'采集时间',
             align:"center",
             dataIndex: 'readTime',
-            customRender:function (text) {
-              return !text?"":(text.length>10?text.substr(0,10):text)
-            }
+            /*customRender:function (text) {
+            return !text?"":(text.length>10?text.substr(0,10):text)
+            }*/
           },
+
           /*{
             title:'创建人',
             align:"center",

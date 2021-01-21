@@ -9,6 +9,8 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.alibaba.fastjson.JSONObject;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.util.oConvertUtils;
@@ -69,6 +71,7 @@ public class MbpMqttDataController extends JeecgController<MbpMqttData, IMbpMqtt
 		QueryWrapper<MbpMqttData> queryWrapper = QueryGenerator.initQueryWrapper(mbpMqttData, req.getParameterMap());
 		Page<MbpMqttData> page = new Page<MbpMqttData>(pageNo, pageSize);
 		IPage<MbpMqttData> pageList = mbpMqttDataService.page(page, queryWrapper);
+		System.out.println("result: " + JSONObject.toJSONString(pageList));
 		return Result.OK(pageList);
 	}
 	
